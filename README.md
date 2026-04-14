@@ -39,10 +39,10 @@ If your source sends `unix` epoch with microsecond precision for `DATA_INP_DTTM`
 ```properties
 transforms=ConvertTs
 transforms.ConvertTs.type=com.dickyalsyah.kafka.connect.transforms.TsConverter$Value
-transforms.ConvertTs.field=DATA_CHNG_DTTM,DATA_INP_DTTM
+transforms.ConvertTs.field=UPDATED_AT,CREATED_AT
 transforms.ConvertTs.target.type=MicroTimestamp
-transforms.ConvertTs.unix.precision=DATA_CHNG_DTTM:milliseconds,DATA_INP_DTTM:microseconds
-transforms.ConvertTs.target.timezone=DATA_CHNG_DTTM:Asia/Bangkok
+transforms.ConvertTs.unix.precision=UPDATED_AT:milliseconds,CREATED_AT:microseconds
+transforms.ConvertTs.target.timezone=UPDATED_AT:Asia/Bangkok
 ```
 
 ### 2. Converting a Single Field
