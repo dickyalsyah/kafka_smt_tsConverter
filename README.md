@@ -34,7 +34,7 @@ This `TsConverter` solves both issues:
 
 ### 1. Converting Multiple Fields (Microsecond Precision)
 
-If your source sends `unix` epoch with microsecond precision for `DATA_INP_DTTM` but uses millisecond precision for `DATA_CHNG_DTTM`, and you want to convert both fields to `MicroTimestamp` while handling a timezone shift for one:
+If your source sends `unix` epoch with microsecond precision for `CREATED_AT` but uses millisecond precision for `UPDATED_AT`, and you want to convert both fields to `MicroTimestamp` while handling a timezone shift for one:
 
 ```properties
 transforms=ConvertTs
