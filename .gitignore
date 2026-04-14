@@ -1,4 +1,3 @@
-target/
 Reproducer*
 test_precision.sh
 TestInference*
