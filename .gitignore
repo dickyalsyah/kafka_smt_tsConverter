@@ -1,0 +1,12 @@
+target/
+Reproducer*
+test_precision.sh
+TestInference*
+TestInstant*
+TestOffset*
+TestOverflow*
+TestTimestamp*
+*.class
+.DS_Store
+.idea/
+*.iml
